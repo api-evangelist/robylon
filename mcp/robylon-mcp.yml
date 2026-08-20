@@ -1,0 +1,33 @@
+generated: '2026-08-20'
+method: searched
+status: published
+published_by_provider: true
+source: https://guides.robylon.ai/.well-known/mcp.json
+deployment:
+  mode: remote
+  endpoint: https://guides.robylon.ai/mcp
+  auth: none
+  verified: probed
+probed:
+  - url: https://guides.robylon.ai/.well-known/mcp.json
+    status: 200
+    content_type: application/json
+    bytes: 223
+    checked: '2026-08-20'
+  - url: https://guides.robylon.ai/mcp
+    method: POST
+    body: '{"jsonrpc":"2.0","id":1,"method":"tools/list"}'
+    status: 200
+    content_type: text/event-stream
+    checked: '2026-08-20'
+    note: Anonymous tools/list returned real tools over SSE. Saved to robylon-mcp-tools-list.txt.
+scope_note: >-
+  This is a DOCUMENTATION MCP server emitted by the Mintlify docs platform, not a Robylon product
+  API server. Its tools search and read the docs corpus; none of them create a ticket, place a call,
+  or trigger a workflow. An agent can learn how to integrate Robylon through MCP but cannot transact
+  with it. Recorded so the MCPServer pointer is not read as a transactional agent surface.
+defect_to_report: >-
+  The descriptor advertises https://robylonai.main-kill-isr.mintlify.me/mcp — a Mintlify PREVIEW
+  hostname — rather than a Robylon-owned domain. The endpoint answers at guides.robylon.ai/mcp, so
+  the working URL and the advertised one differ. Any agent following the descriptor is pinned to a
+  vendor preview host the provider does not control.

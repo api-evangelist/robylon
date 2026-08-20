@@ -1,0 +1,44 @@
+# Robylon
+
+## Docs
+
+- [Robylon Guides: Introduction](https://guides.robylon.ai/index.md): Get an overview of Robylon's AI agents - how they work, and what you can automate. Learn key concepts & terminologies.
+- [Brand Info](https://guides.robylon.ai/brand-info.md)
+- [Robylon Models Comparison: Pick the Right LLM](https://guides.robylon.ai/model-comparison.md): Compare supported models by cost, speed, context length, and quality. See trade-offs and defaults for chat, email, and WhatsApp support.
+- [Languages](https://guides.robylon.ai/languages.md)
+- [Create and Manage AI Personas](https://guides.robylon.ai/ai-persona.md): An AI Persona defines the framing, tone, and style of replies sent to your customers. You can configure multiple personas to adapt communication for different channels, use cases, or teams.
+- [Managing Human Users](https://guides.robylon.ai/human-users/add-human-users.md): The Human Users tab is where you manage the people who can access the Robylon platform. Here, you can view all active users, assign roles, and control permissions.
+- [Human user statuses](https://guides.robylon.ai/human-users/agent-status.md): The Agent Status tab allows you to configure the availability states that agents can have on the Robylon platform. These statuses determine whether an agent is eligible to handle chats, tickets, or calls.
+- [Human agent assignment logic](https://guides.robylon.ai/human-users/assignment.md): The Assignment Logic tab controls how chat and voice agent handovers are handled. You can configure rules for agent assignment, working hours, out-of-office handling, and holiday schedules.
+- [Tags & Canned Responses](https://guides.robylon.ai/human-users/tags-canned.md): The Agent Productivity tools include Tags and Canned Responses, which help agents classify conversations and respond more efficiently.
+- [Knowledge Base](https://guides.robylon.ai/knowledgebase/index.md): Getting Started with Your Robylon AI Knowledge Base!
+- [Knowledge Base from Humans](https://guides.robylon.ai/knowledgebase/kb-from-humans.md)
+- [Custom KB Responses](https://guides.robylon.ai/knowledgebase/custom-kb-responses.md)
+- [Click to Improve](https://guides.robylon.ai/knowledgebase/click-to-improve.md)
+- [Bulk Testing](https://guides.robylon.ai/knowledgebase/untitled-page.md)
+- [Managing Your Knowledge Base](https://guides.robylon.ai/knowledgebase/managingkb.md): Manage sources, tags, usage limits, and activate your KB Agent to deliver accurate, on-brand answers.
+- [Customize your Robylon Bot](https://guides.robylon.ai/customize-your-robylon-bot.md): Step-by-step to tailor tone, intents, guardrails, knowledge sources, and handoffs-so your AI agent matches your brand and resolves faster.
+- [Chatbot Settings](https://guides.robylon.ai/channels-connectors/chatbot-settings.md): The Chatbot Settings tab gives you full control over the look, feel, and behavior of your chatbot. It also provides installation instructions for deploying on both web and mobile platforms. A live preview widget is displayed on the left to show how the chatbot will appear once deployed.
+- [Suggested Messages](https://guides.robylon.ai/knowledgebase/suggested-messages.md)
+- [Robylon × Bubble Integration: No-Code Setup Guide](https://guides.robylon.ai/integrations/bubble.md): Connect Robylon to your Bubble app in minutes. Add chat widgets, secure webhooks, and event tracking-without code. Bubble is a no-code website builder.
+- [Robylon × Framer Integration: Add Chat to Your Site](https://guides.robylon.ai/integrations/framer.md): Embed Robylon on Framer sites with copy-paste code. Configure theme, launcher behavior, and identity for personalized conversations.
+- [Robylon × Webflow Integration: Add Chat to your site](https://guides.robylon.ai/integrations/webflow.md): Install the Robylon chat widget on Webflow. Add chat widgets, secure webhooks, and event tracking-without code.
+- [Robylon × Wix Integration: Add Chat to your site](https://guides.robylon.ai/integrations/wix.md): Install the Robylon chat widget on Wix. Add chat widgets, secure webhooks, and event tracking-without code.
+- [Robylon × Wordpress Integration: Add Chat to your site](https://guides.robylon.ai/integrations/wordpress.md): Install the Robylon chat widget on Wordpress. Add chat widgets, secure webhooks, and event tracking-without code.
+- [Voice Settings](https://guides.robylon.ai/channels-connectors/voice-settings.md): The Voice Settings tab allows you to manage the phone numbers your voice agents use. You can view existing numbers, check providers, and add new ones for inbound or outbound calls.
+- [Channels](https://guides.robylon.ai/channels-connectors/channels.md): The Channels tab allows you to manage all the external applications connected to the Robylon platform. From here, you can review existing integrations or connect new apps.
+- [Create a Custom AI Agent](https://guides.robylon.ai/ai-agents/custom-ai-agents.md): Build specialized agents to handle specific tasks within your workflows. Custom AI agents allow you to control behavior, assign tools, and fine-tune models for task-oriented automation.
+- [Configure the Knowledge Base (KB) Agent](https://guides.robylon.ai/ai-agents/kb-agent.md): A Knowledge Base (KB) Agent is created automatically when you add documents to your knowledge base. It leverages these documents to answer user questions and can be enhanced with instructions, tools, and personalization.
+- [Create a Triage (Master) AI Agent](https://guides.robylon.ai/ai-agents/triage-agent.md): A Triage Agent (aka Master Agent) acts as a smart router. It analyzes each incoming ticket/chat, applies priority-based rules, and hands off to the right Sub-Agent for expert handling—rather than solving the issue itself.
+- [Create & Use APIs, Tools, and Functions](https://guides.robylon.ai/data-and-integrations/api-tools-functions.md): Learn what APIs, Tools, and Functions are, when to use them, and how to implement them effectively with reusable templates, contracts, and Python code.
+- [Manage Secrets and API Keys](https://guides.robylon.ai/data-and-integrations/secrets-keys.md): Use Secrets to securely store sensitive credentials and API Keys to give external systems controlled access to the Robylon API.
+- [Create Variables, Intents, and Entities](https://guides.robylon.ai/data-and-integrations/variables-intents-entities.md): Learn how to define and configure variables, intents, and entities as core data objects for building automations.
+- [Workflows](https://guides.robylon.ai/product/product.md): Design reliable, debuggable AI-powered workflows using Triggers, Talk, Listen, Gen AI, Logic, Dev, and Notes blocks. This guide explains what each block does, when to use it, and shows end‑to‑end patterns.
+- [Triggers](https://guides.robylon.ai/product/triggers.md): Triggers are the start points of an automation. They fire when a specific event occurs and launch the configured workflow. Use them to control when an automation begins and to chain automations when one ends.
+- [Talk Components](https://guides.robylon.ai/product/talk.md): Talk components are used to output information in workflows. They function like print statements in programming—controlling what is displayed, where it is displayed, and to whom.
+- [Listen Components](https://guides.robylon.ai/product/listen.md): Listen components capture inputs from customers, ticketing systems, APIs, or other workflows. They ensure automations receive the right context before taking action.
+- [Gen AI Components](https://guides.robylon.ai/product/gen-ai.md): Gen AI components allow you to build intelligent automation blocks powered by AI. They use prompts, knowledge bases, and tools to generate, evaluate, or extract information from conversations.
+- [Logic Components](https://guides.robylon.ai/product/logic.md): Logic components bring reasoning and control flow to workflows. They let you branch paths, update variables, and introduce delays to handle real-world timing and decision-making.
+- [Dev Components](https://guides.robylon.ai/product/dev-notes.md): Dev components bring development and engineering flexibility into workflows. They allow you to call APIs, run Python functions, connect integrations, and annotate workflows with notes.
+- [Guide: Using the Analytics Dashboard](https://guides.robylon.ai/analytics.md): The Analytics tab provides detailed reports and real-time data on team performance and customer interactions. This guide explains how to configure your dashboard, set up automated reports, and track key support metrics.
+- [Conversation Insights](https://guides.robylon.ai/conversation-insights.md): The Conversation Insights tab helps you measure and analyze user sentiment in chats. By tracking sentiment at the message level, you can identify pain points, improve workflows, and guide agents with actionable recommendations.

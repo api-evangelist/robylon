@@ -1,0 +1,80 @@
+aid: robylon
+name: Robylon AI
+description: Enterprise AI customer-support platform spanning voice, WhatsApp, chat, email, social media
+  and ticketing. The platform runs AI agents against a customer knowledge base with configurable personas,
+  model selection, human-agent handover and assignment logic, and its APIs let external systems interact
+  with Robylon and trigger workflows including voice and outbound automation. Documentation is public
+  and extensive and the docs host serves both an llms.txt index and an unauthenticated MCP server; what
+  is not published is a machine-readable contract for the product API itself.
+url: https://raw.githubusercontent.com/api-evangelist/robylon/refs/heads/main/apis.yml
+created: '2026-08-20'
+modified: '2026-08-20'
+specificationVersion: '0.23'
+tags:
+- Customer Support
+- AI Agents
+- Conversational AI
+- Voice
+- WhatsApp
+- Chat
+- Email
+- Ticketing
+- Contact Center
+- Workflow Automation
+apis:
+- aid: robylon:robylon-platform-api
+  name: Robylon Platform API
+  description: 'Lets external systems interact with Robylon and trigger workflows, including voice and
+    outbound automation. Operations are not enumerated here: no OpenAPI or other machine-readable contract
+    is served, so nothing is asserted about the operation surface.'
+  humanURL: https://guides.robylon.ai/
+  baseURL: https://www.robylon.ai
+  tags:
+  - Customer Support
+  - AI Agents
+  - Workflow Automation
+  properties:
+  - type: Documentation
+    url: https://guides.robylon.ai/
+  - type: LlmsText
+    url: https://guides.robylon.ai/llms.txt
+common:
+- type: Website
+  url: https://www.robylon.ai
+- type: DeveloperPortal
+  url: https://guides.robylon.ai/
+- type: Documentation
+  url: https://guides.robylon.ai/
+- type: APIReference
+  url: https://guides.robylon.ai/
+- type: LlmsText
+  url: https://guides.robylon.ai/llms.txt
+- type: MCPServer
+  url: https://guides.robylon.ai/mcp
+- type: GettingStarted
+  url: https://guides.robylon.ai/index.md
+maintainers:
+- FN: Robylon AI
+  url: https://www.robylon.ai
+x-evidence:
+  round: '2026-08-20'
+  admitted_from: Direct request to info@apievangelist.com from Akash G M, Growth Team at Robylon AI, asking
+    to be indexed and offering to supply whatever artifacts would help.
+  verified_2026_08_20:
+    www.robylon.ai: 200, 102,466b; an invented path returns 404, so the host discriminates.
+    guides.robylon.ai: 200, 250,163b of real documentation.
+    llms.txt: 200 text/plain 8,883b, plus llms-full.txt at 125,053b.
+    mcp: /.well-known/mcp.json 200 application/json; POST tools/list to /mcp returned 200 text/event-stream
+      with real tools, anonymously.
+    user_agent_check: Every request run twice, with a default client user-agent and with a browser user-agent.
+      Byte-identical both ways — Robylon filters nobody.
+  no_openapi: 'No OpenAPI, apis.json or other machine-readable contract found on either host. Probed the
+    docs-platform conventions as well as the obvious paths: /openapi.json, /references/openapi.yaml, /openapi/api-reference.json,
+    /api-reference/introduction — all 404. Nothing derived or modelled; the single API entry asserts no
+    operations because none are readable.'
+  mcp_scope_note: The MCP server is real and unauthenticated, and it is a Mintlify DOCUMENTATION server
+    — its tools search the docs corpus. None create a ticket, place a call or trigger a workflow. An agent
+    can learn how to integrate Robylon through MCP but cannot transact with it.
+  defect_to_report: The MCP descriptor advertises https://robylonai.main-kill-isr.mintlify.me/mcp — a
+    Mintlify PREVIEW hostname — while the endpoint actually answers at guides.robylon.ai/mcp. Any agent
+    following the descriptor is pinned to a vendor preview host Robylon does not control.
