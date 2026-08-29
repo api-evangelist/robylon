@@ -7,6 +7,17 @@ description: Enterprise AI customer-support platform spanning voice, WhatsApp, c
   and extensive and the docs host serves both an llms.txt index and an unauthenticated MCP server; what
   is not published is a machine-readable contract for the product API itself.
 url: https://raw.githubusercontent.com/api-evangelist/robylon/refs/heads/main/apis.yml
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 created: '2026-08-20'
 modified: '2026-08-20'
 specificationVersion: '0.23'
