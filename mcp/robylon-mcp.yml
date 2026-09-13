@@ -34,3 +34,16 @@ defect_to_report: The descriptor advertises https://robylonai.main-kill-isr.mint
   PREVIEW hostname — rather than a Robylon-owned domain. The endpoint answers at guides.robylon.ai/mcp,
   so the working URL and the advertised one differ. Any agent following the descriptor is pinned to a
   vendor preview host the provider does not control.
+tools_count: 3
+tools:
+- name: search_robylon
+  description: ''
+- name: query_docs_filesystem_robylon
+  description: ''
+- name: submit_feedback
+  description: ''
+tools_source: live tools/list via initialize handshake, 2026-09-11 (signals/audit_mcp_authorship.py --probe)
+authorship: platform
+authorship_note: 'PLATFORM-AUTHORED: this tool shape is shared with at least one other provider in the
+  catalog, so it is a platform default appearing under this provider''s domain rather than an interface
+  this provider designed. Shared shape: (''query_docs_filesystem_*'', ''search_*'', ''submit_feedback'')'
