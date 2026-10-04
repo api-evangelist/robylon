@@ -22,7 +22,7 @@ created: '2026-08-20'
 modified: '2026-08-20'
 specificationVersion: '0.23'
 tags:
-- Customer-Support
+- Customer Support
 - AI Agents
 - Conversational AI
 - Voice
@@ -31,7 +31,7 @@ tags:
 - Email
 - Ticketing
 - Contact Center
-- Workflow-Automation
+- Workflow Automation
 tags_raw:
 - Customer Support
 - AI Agents
@@ -43,6 +43,8 @@ tags_raw:
 - Ticketing
 - Contact Center
 - Workflow Automation
+- Customer-Support
+- Workflow-Automation
 apis:
 - aid: robylon:robylon-platform-api
   name: Robylon Platform API
@@ -50,15 +52,16 @@ apis:
     outbound automation. Operations are not enumerated here: no OpenAPI or other machine-readable contract
     is served, so nothing is asserted about the operation surface.'
   humanURL: https://guides.robylon.ai/
-  baseURL: https://www.robylon.ai
   tags:
-  - Customer-Support
+  - Customer Support
   - AI Agents
-  - Workflow-Automation
+  - Workflow Automation
   tags_raw:
   - Customer Support
   - AI Agents
   - Workflow Automation
+  - Customer-Support
+  - Workflow-Automation
   properties:
   - type: Documentation
     url: https://guides.robylon.ai/
